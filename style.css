@@ -84,6 +84,11 @@ p {
     display: flex;
     align-items: center;
 }
+.egd-logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .egd-logo {
     height: 50px;
     transition: all 0.3s linear;
@@ -355,7 +360,7 @@ p {
 .videosList {
     width: 30%;
     padding: 10px 20px 20px 20px;
-    background: #a7a7a7;
+    background: rgb(214, 214, 214);
     display: grid;
     gap: 1rem;
 }
@@ -369,11 +374,14 @@ p {
     align-items: center;
 }
 .videoImgContainer {
+    background-color: rgb(214, 214, 214);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
 }
 .videoImg {
     width: 100%;
@@ -391,7 +399,7 @@ p {
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    /* background: rgba(0, 0, 0, 0.3); */
     display: flex;
     justify-content: center;
     align-items: center;

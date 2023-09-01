@@ -6,12 +6,13 @@ const navLinks = document.getElementsByClassName('nav-items');
 const videoPlayer = document.querySelector('.videoPlayer');
 const videosList = document.querySelector('.videosList');
 const videosData = [
-{id:1, text:'DCS WORLD: EGDevils Training - Air Refueling & Aerobatics', img:'https://i.ytimg.com/vi/f4sNnHzVHZk/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFYoZTAP&rs=AOn4CLA7cuSGaHn2LzGFGtOEsVwoIbnJUg', video: 'https://www.youtube.com/embed/f4sNnHzVHZk'},
-{id:2, text:'DCS World: Egyptian Mi-8 Helicopter Sling Load', img:'https://i.ytimg.com/vi/fzDjoOHOcak/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFooZTAP&rs=AOn4CLCFV7twuDYqqdUMlOJOTne5GRdKDA', video:'https://www.youtube.com/embed/fzDjoOHOcak'},
-{id:3, text:'Digital Combat Simulator - EG Devils', img:'https://i.ytimg.com/vi/Si8zhBTQKF8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1X6yMInrGmFRBe-EZWzxTohoulQ', video:'https://www.youtube.com/embed/Si8zhBTQKF8'},
-{id:4, text:'DCS World - Strategic Egyptian Aircraft', img:'https://i.ytimg.com/vi/g4Kj_490_Oo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBW-5qWxw5eWGnNCMKiFWpmjSI_FA', video:'https://www.youtube.com/embed/g4Kj_490_Oo'},
-{id:5, text:'المروحية المصرية المى 8 ومهمة توصيل التموين لحاملة الطائرات الميسترال', img:'https://i.ytimg.com/vi/A_0tOeRziTI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD44dpiUi1tMfyKdlaHhYeZBcsSLA', video:'https://www.youtube.com/embed/A_0tOeRziTI'},
-{id:6, text:'EGYPTIAN AIR FORCE [VIRTUAL]', img:'https://i.ytimg.com/vi/kLr6LTV0dRI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcne2JUmhyJvRXV_GNlzjcSbgdeQ', video:'https://www.youtube.com/embed/kLr6LTV0dRI'}
+{id:1, text:'DCS WORLD: Egyptian F16 - Mig29 [CINEMATIC SHOTS]', img:'https://i.ytimg.com/vi/NXqOFjW3Ozk/hqdefault.jpg?sqp=-oaymwEpCNACELwBSFryq4qpAxsIARUAAIhCGAHYAQHiAQwIGhACGAYgATgBQAE=&rs=AOn4CLCIlymzH6IrVtnmd8U-rP9Nx7D9MQ', video: 'https://www.youtube.com/embed/NXqOFjW3Ozk?si=DRvEK29uvP1Qmzp7'},
+{id:2, text:'DCS WORLD: EGDevils Training - Air Refueling & Aerobatics', img:'https://i.ytimg.com/vi/f4sNnHzVHZk/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFYoZTAP&rs=AOn4CLA7cuSGaHn2LzGFGtOEsVwoIbnJUg', video: 'https://www.youtube.com/embed/f4sNnHzVHZk'},
+{id:3, text:'DCS World: Egyptian Mi-8 Helicopter Sling Load', img:'https://i.ytimg.com/vi/fzDjoOHOcak/hqdefault.jpg?sqp=-oaymwE2CNACELwBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhGIFooZTAP&rs=AOn4CLCFV7twuDYqqdUMlOJOTne5GRdKDA', video:'https://www.youtube.com/embed/fzDjoOHOcak'},
+{id:4, text:'Digital Combat Simulator - EG Devils', img:'https://i.ytimg.com/vi/Si8zhBTQKF8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1X6yMInrGmFRBe-EZWzxTohoulQ', video:'https://www.youtube.com/embed/Si8zhBTQKF8'},
+{id:5, text:'DCS World - Strategic Egyptian Aircraft', img:'https://i.ytimg.com/vi/g4Kj_490_Oo/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBW-5qWxw5eWGnNCMKiFWpmjSI_FA', video:'https://www.youtube.com/embed/g4Kj_490_Oo'},
+{id:6, text:'المروحية المصرية المى 8 ومهمة توصيل التموين لحاملة الطائرات الميسترال', img:'https://i.ytimg.com/vi/A_0tOeRziTI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD44dpiUi1tMfyKdlaHhYeZBcsSLA', video:'https://www.youtube.com/embed/A_0tOeRziTI'},
+{id:7, text:'EGYPTIAN AIR FORCE [VIRTUAL]', img:'https://i.ytimg.com/vi/kLr6LTV0dRI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcne2JUmhyJvRXV_GNlzjcSbgdeQ', video:'https://www.youtube.com/embed/kLr6LTV0dRI'}
 ];
 
 // preloader
@@ -112,10 +113,10 @@ function playVideo(listVids){
 
 function listHover(img){
     img.addEventListener('mouseover', () => {
-        img.children[0].style.background = "rgba(227, 227, 227, 0.2)";
+        img.children[0].style.background = "rgba(150, 150, 150, 0.3)";
     });
     img.addEventListener('mouseout', () => {
-        img.children[0].style.background = "rgba(0, 0, 0, 0.3)";
+        img.children[0].style.background = "rgba(214, 214, 214, 0.1)";
     });
 }
 
